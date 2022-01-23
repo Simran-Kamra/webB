@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="999.0" prefWidth="1920.0"  xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ffadad;" BorderPane.alignment="CENTER">
+            <items>
+            <Button mnemonicParsing="false" onAction="#back" style="-fx-background-color: #caffbf;" text="&lt;-" />
+            <Button mnemonicParsing="false" onAction="#forward" style="-fx-background-color: #caffbf;" text="-&gt;" />
+                <Button mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #caffbf;" text="🗘" textFill="BLACK" />
+                <TextField fx:id="addressBar" prefHeight="26.0" prefWidth="1020.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+                <Button mnemonicParsing="false" onAction="#go" style="-fx-background-color: #caffbf;" text="Go" textFill="BLACK" />
+                <Button mnemonicParsing="false" onAction="#displayHistory" style="-fx-background-color: #caffbf;" text="history" textFill="BLACK" />
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <WebView fx:id="web" prefHeight="200.0" prefWidth="431.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
